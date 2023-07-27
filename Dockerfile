@@ -2,11 +2,9 @@ FROM python:3.7
 
 WORKDIR /app
 
-COPY Pipfile Pipfile.lock /app/
+COPY . .
 
-RUN pip install pipenv && pipenv install --system --deploy
-
-COPY . /app/
+RUN pip install -r requirements.txt 
 
 EXPOSE 5000
 
