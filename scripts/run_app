@@ -1,0 +1,2 @@
+#!/bin/bash
+docker run -itd --name war-chen -p 80:80 nginx:latest
